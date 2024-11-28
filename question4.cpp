@@ -50,7 +50,7 @@ void scheduleTasks(vector<Task>& tasks, int n) {
     }
 
     // Output the total maximum profit
-    cout << "Maximum Profit: " << totalProfit << endl;
+    cout << endl << "Maximum Profit: " << totalProfit << endl;
 
     // Output the scheduled tasks (by their original indices)
     cout << "Scheduled Tasks: [";
