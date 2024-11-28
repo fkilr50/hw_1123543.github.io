@@ -1,5 +1,6 @@
 ### Data Structure HW2
 ### Marvel Aiken 1123543
+
 ### Question 1: Binary Tree - Find the Diameter of a Binary Tree
 <br>
 Problem Statement:
@@ -22,11 +23,10 @@ Output Format:
 Print an integer representing the diameter of the binary treeInput:
 ---
 Input:
-[1, 2, 3, 4, 5, 6, -1, -1, -1, 7, 8, 9, 10, -1, -1]
+1 2 3 -1 -1 -1 4
 
 Output:
-6
-
+3
 
 ---
 ### Question 2: Heap Sort - Build a Priority Queue for Tasks
@@ -54,18 +54,21 @@ priority.
 priority.
 ---
 Input:
-6
-ADD Task1 10
-ADD Task2 15
-ADD Task3 5
+7
+ADD Task1 250
+ADD Task2 310
+ADD Task3 100
+ADD Task4 160
 GET
-ADD Task4 20
+GET
 GET
 
 Output:
 Task2
+Task1
 Task4
-Remaining tasks: [('Task1', 10), ('Task3', 5)]
+
+Remaining Task: Task3 100,
 
 
 ---
@@ -90,14 +93,14 @@ Output Format
 A single line containing the merged sorted array
 
 ---
-Example Input
+Input
 3
-1 4 7
-2 5 8
-3 6 9
+50 200 350
+100 250 400
+150 300 450
 
-Example Output
-Merged Array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Output
+50 100 150 200 250 300 350 400 450 
 
 ---
 ### Question 4: Schedule Tasks with Deadlines Using Max Priority Queue
@@ -116,13 +119,15 @@ Output Format
 1. The maximum profit that can be achieved.
 2. The list of scheduled tasks in the order they are executed.
 ---
-Example Input
-4
-100 2
-19 1
-27 2
-25 1
+Input
+6
+500 2
+160 3
+180 1
+480 1
+250 3
+120 2
 
-Example Output
-Maximum Profit: 127
-Scheduled Tasks: [100, 27]
+Output
+Maximum Profit: 1230
+Scheduled Tasks: [500, 480, 250]
